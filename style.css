@@ -1,0 +1,252 @@
+/* Resetting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Press Start 2P", cursive;
+}
+
+/*  styles for the gaming section */
+.gaming-section {
+  text-align: center;
+  padding: 3.2rem 0.43rem;
+  background-color: #f5f5f5;
+}
+
+/* Heading and paragraph styles */
+.gaming-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.33rem;
+  word-spacing: -11px;
+}
+
+.gaming-section h2 .spn,
+.gaming-section p .spn {
+  color: #ea3;
+}
+
+.gaming-section p {
+  font-size: 1.11rem;
+  color: #444444;
+  margin-bottom: 2.11rem;
+  word-spacing: -3px;
+  line-height: 30px;
+}
+
+/* Gaming card styles */
+.gaming-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gaming-card {
+  width: 23%;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  border-radius: 5px;
+}
+
+.gaming-card:hover {
+  background-color: rgb(221, 167, 74);
+  box-shadow: inset 1px -1px 17px #ea3;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 200px;
+  transition: transform 0.5s;
+}
+
+/* Card front styles */
+.card-front {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Card back styles */
+.card-back {
+  background-color: #e0e0e0;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-back h3 {
+  font-size: 1.55rem;
+  margin-bottom: 0.67rem;
+  letter-spacing: 2px;
+  font-family: "Antonio", sans-serif;
+  font-weight: bold;
+}
+
+.card-back p {
+  font-size: 0.87rem;
+  letter-spacing: 3px;
+  line-height: 25px;
+  font-family: "Antonio", sans-serif;
+  font-weight: 300;
+}
+
+/* Hover effect */
+.gaming-card:hover .card-front {
+  transform: rotateY(180deg);
+  /* opacity: 0.7; */
+}
+
+.gaming-card:hover .card-back {
+  transform: rotateY(0deg);
+  background-color: #ea3;
+  color: #fff;
+}
+
+.card-back p:hover {
+  color: #fff;
+}
+
+/* Responsive styles---------------------- */
+/* -------------RESPONSIVE---------------- */
+@media (max-width: 768px) {
+  /* Heading and paragraph styles */
+  .gaming-section h2 {
+    font-size: 1.57rem;
+    line-height: 37px;
+  }
+
+  .gaming-section p {
+    font-size: 1.11rem;
+    color: #444444;
+    margin-bottom: 2.11rem;
+    word-spacing: -3px;
+    line-height: 30px;
+  }
+
+  .gaming-cards {
+    flex-wrap: wrap;
+  }
+
+  .gaming-card {
+    width: 100%;
+    margin-bottom: 2rem;
+    flex: 1 1 calc(50% - 1rem); /* Adjust width as needed */
+    margin: 0.5rem;
+  }
+  .gaming-card:hover .card-back {
+    transform: rotateY(0deg);
+    background-color: #ea3ea3;
+    color: #fff;
+  }
+
+  .gaming-section h2 .spn,
+  .gaming-section p .spn {
+    color: #ea3ea3;
+  }
+}
+
+@media (max-width: 858px) {
+  #gaming-section {
+    padding: 3.77rem 0.53rem;
+  }
+
+  #gaming-section h2 {
+    font-size: 1.57rem;
+    margin-bottom: 1rem;
+    word-spacing: -11px;
+  }
+
+  #gaming-section > p {
+    font-size: 0.87rem;
+    margin-bottom: 1.57rem;
+    word-spacing: -2px;
+    line-height: 25px;
+  }
+
+  #gaming-card {
+    /* width: 24%; */
+  }
+
+  #card-front,
+  #card-back {
+    width: 100%;
+    height: 150px;
+  }
+
+  /* Card back styles */
+  #card-back {
+    padding: 0.55rem;
+    padding-top: 2rem;
+  }
+
+  #card-back h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.37rem;
+  }
+
+  #card-back p {
+    font-size: 0.67rem;
+    letter-spacing: 1px;
+    /* font-weight: 300; */
+    word-spacing: 1px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .gaming-section {
+    padding: 2.77rem 0.53rem;
+  }
+
+  .gaming-section h2 {
+    font-size: 1.87rem;
+    margin-bottom: 1rem;
+    word-spacing: -19px;
+  }
+
+  .gaming-section p {
+    font-size: 1rem;
+    margin-bottom: 1.33rem;
+    word-spacing: -7px;
+    line-height: 22px;
+  }
+
+  .gaming-card {
+    width: 24%;
+    perspective: 1000px;
+  }
+
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 180px;
+  }
+
+  /* Card back styles */
+  .card-back {
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+
+  .card-back h3 {
+    font-size: 1.45rem;
+    margin-bottom: 0.47rem;
+  }
+
+  .card-back p {
+    font-size: 0.77rem;
+    letter-spacing: 3px;
+  }
+}
