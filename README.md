@@ -32,7 +32,7 @@ Follow these steps to get started with the project:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/your-project.git
+   git clone https://github.com/jvshah124/your-project.git
    ```
 
 2. Include the necessary CSS and JavaScript files in your HTML document:
@@ -86,4 +86,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Feel free to reach out to us if you have any questions or feedback. Happy gaming!
 ```
 
-Replace `"link-to-demo"`, `"yourusername"`, `"your-project"`, and other placeholders with appropriate information for your project. This template provides a basic structure for your README.md file, but feel free to add more details or sections as needed.
+
